@@ -21,8 +21,8 @@ steps-to-reproduce:
 1. Зайти на сайт магазина https://hexlet-products-store.vercel.app/
 2. В форме языка выбрать русский
 expected-result:
-Перевод текста на русккий язык
--resactualult:
+Перевод текста на русский язык
+actual-result:
 Отсутствие перевода
 
 - summary:
@@ -36,7 +36,9 @@ steps-to-reproduce:
 3. Развернуть форму "Категория"
 expected-result:
 Перевод текста на русский язык
-- summary:
+actual-result:
+Отсутствие перевода
+
 
 - summary:
 При выборе товара, происходит переход на страницу товара, где отсутствует перевод описания товара на русский язык 
@@ -49,5 +51,55 @@ steps-to-reproduce:
 3. Выбрать любой товар 
 expected-result:
 Перевод текста на русский
+actual-result:
+Отсутствие перевода
+
+- summary:
+Не адептируется под мобильные приложения с маленой шириной экрана
+environment:
+- https://hexlet-products-store.vercel.app/
+- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.2470 YaBrowser/23.11.0.2470 Yowser/2.5 Safari/537.36
+step-to-reproduce:
+1. Зайти на сайт магазина https://hexlet-products-store.vercel.app/
+2. Открыть devops
+3. Открыть панель инструментов
+4. Указать ширину экрана 500
+expected-result:
+Удобство пользования на мобильных устройствах
+actual-result:
+Шапака товаров сжимается, католог товаров сьезжает влево, не используется пространство экрана справой стороны
+
+- summary:
+При отсутствии интернета пользователю не выходит сообщение об ошибке
+environment:
+- https://hexlet-products-store.vercel.app/
+- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.2470 YaBrowser/23.11.0.2470 Yowser/2.5 Safari/537.36
+step-to-reproduce:
+1. Зайти на сайт магазина https://hexlet-products-store.vercel.app/
+2. Открыть devops
+3. Открыть панель инструментов
+4. Выбрать офлайн
+expected-result:
+Выводится ошибка о проблемах с интернет соединением
+actual-result:
+Остается только шапка магазина, пропадает центральная часть и боковая панель, появляется мигающий кружок, сообщение об ошибке отсутствует
+
+- summary:
+Для не установлены куки
+environment:
+- https://hexlet-products-store.vercel.app/
+- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.2470 YaBrowser/23.11.0.2470 Yowser/2.5 Safari/537.36
+step-to-reproduce:
+1. Зайти на сайт магазина https://hexlet-products-store.vercel.app/
+2. Открыть devops
+3. Во вкладке Cookies выбрать текущий сайт
+expected-result:
+Ожидается увидеть куки которые установленны для сайта
+actual-ressult:
+Данных о куках нет
+
+
+
+
 
 
