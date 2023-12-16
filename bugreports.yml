@@ -2,8 +2,7 @@
 - summary: 
     В форме выбора языка у английского языка нет картинки флага
   environment:
-    - https://hexlet-products-store.vercel.app/english
-    - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.2470 YaBrowser/23.11.0.2470 Yowser/2.5 Safari/537.36
+    Mozilla/5.0 Windows NT 10.0; Win64; x64 
   steps-to-reproduce: 
     1. Зайти на сайт магазина https://hexlet-products-store.vercel.app/
     2. Развернуть форму выбора языка
@@ -15,8 +14,7 @@
 - summary: 
     При смене языка с английского на русский не происходит перевод подробного описания продукта на главной странице магазина в ячейках товара
   environment: 
-    - https://i.dummyjson.com/data/products/1/thumbnail.jpg
-    - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.2470 YaBrowser/23.11.0.2470 Yowser/2.5 Safari/537.36
+    Mozilla/5.0 Windows NT 10.0; Win64; x64
   steps-to-reproduce:
     1. Зайти на сайт магазина https://hexlet-products-store.vercel.app/
     2. В форме языка выбрать русский
@@ -28,8 +26,7 @@
 - summary: 
     При смене языка с английского на русский не происходит перевод категорий товара
   environment:
-    - https://hexlet-products-store.vercel.app/english
-    - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.2470 YaBrowser/23.11.0.2470 Yowser/2.5 Safari/537.36
+    Mozilla/5.0 Windows NT 10.0; Win64; x64
   steps-to-reproduce:
     1. Зайти на сайт магазина https://hexlet-products-store.vercel.app/
     2. Развернуть форму языка и выбрать русский
@@ -42,8 +39,7 @@
 - summary: 
     При выборе товара, происходит переход на страницу товара, где отсутствует перевод описания товара на русский язык 
   environment:
-    - https://dummyjson.com/products/1
-    - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.2470 YaBrowser/23.11.0.2470 Yowser/2.5 Safari/537.36
+    Mozilla/5.0 Windows NT 10.0; Win64; x64
   steps-to-reproduce:
     1. Зайти на сайт магазина https://hexlet-products-store.vercel.app/
     2. Развернуть форму языка и выбрать русский
@@ -56,8 +52,7 @@
 - summary:
     Не адаптируется под мобильные приложения с маленькой шириной экрана
   environment:
-    - https://hexlet-products-store.vercel.app/ 
-    - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.2470 YaBrowser/23.11.0.2470 Yowser/2.5 Safari/537.36
+    Mozilla/5.0 Windows NT 10.0; Win64; x64
   step-to-reproduce:
     1. Зайти на сайт магазина https://hexlet-products-store.vercel.app/
     2. Открыть devops
@@ -71,8 +66,7 @@
 - summary: 
     При отсутствии интернета пользователю не выходит сообщение об ошибке
   environment: 
-    - https://hexlet-products-store.vercel.app/ 
-    - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.2470 YaBrowser/23.11.0.2470 Yowser/2.5 Safari/537.36
+    Mozilla/5.0 Windows NT 10.0; Win64; x64
   step-to-reproduce:
     1. Зайти на сайт магазина https://hexlet-products-store.vercel.app/
     2. Открыть devops
@@ -86,8 +80,7 @@
 - summary:
     Для магазина не установлены куки
   environment: 
-    - https://hexlet-products-store.vercel.app/ 
-    - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.2470 YaBrowser/23.11.0.2470 Yowser/2.5 Safari/537.36
+    Mozilla/5.0 Windows NT 10.0; Win64; x64
   step-to-reproduce:
     1. Зайти на сайт магазина https://hexlet-products-store.vercel.app/
     2. Открыть devops
