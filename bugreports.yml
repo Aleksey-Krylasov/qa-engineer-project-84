@@ -53,7 +53,7 @@
     Не адаптируется под мобильные приложения с маленькой шириной экрана
   environment:
     Mozilla/5.0 Windows NT 10.0; Win64; x64
-  step-to-reproduce:
+  steps-to-reproduce:
     1. Зайти на сайт магазина https://hexlet-products-store.vercel.app/
     2. Открыть devops
     3. Открыть панель инструментов
@@ -67,7 +67,7 @@
     При отсутствии интернета пользователю не выходит сообщение об ошибке
   environment: 
     Mozilla/5.0 Windows NT 10.0; Win64; x64
-  step-to-reproduce:
+  steps-to-reproduce:
     1. Зайти на сайт магазина https://hexlet-products-store.vercel.app/
     2. Открыть devops
     3. Открыть панель инструментов
@@ -81,7 +81,7 @@
     Для магазина не установлены куки
   environment: 
     Mozilla/5.0 Windows NT 10.0; Win64; x64
-  step-to-reproduce:
+  steps-to-reproduce:
     1. Зайти на сайт магазина https://hexlet-products-store.vercel.app/
     2. Открыть devops
     3. Во вкладке Cookies выбрать текущий сайт
