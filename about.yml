@@ -4,3 +4,6 @@ job:  QA
 level:  junior
 email:  krylasov.98@mail.ru
 description: В данный момент работаю машинистом метро
+skills:
+- Функциональное тестирование
+- Написание багрепортов
