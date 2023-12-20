@@ -6,12 +6,11 @@ test-cases:
 
 - summary: 
     Успешное добавление товара в корзину
-  requirement: 
     status: pass
 
 - summary:
     Успешная фильтрация товара в категории "Бренд"
-    status: pass
+  status: pass
 
 - summary:
     Успешный поиск товара по ключевому слову 
