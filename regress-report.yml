@@ -6,7 +6,7 @@ test-cases:
 
 - summary: 
     Успешное добавление товара в корзину
-    status: pass
+  status: pass
 
 - summary:
     Успешная фильтрация товара в категории "Бренд"
