@@ -89,3 +89,54 @@
     Ожидается увидеть куки которые установленны для сайта
   actual-result:
     Данных о куках нет
+
+- summary:
+    Отсутствует кнопка удаления всех товаров из корзины
+  environment: 
+    Mozilla/5.0 Windows NT 10.0; Win64; x64
+  steps-to-reproduce:
+    1. Зайти на сайт магазина https://hexlet-products-store.vercel.app/
+    2. Добавить несколько разных товаров
+  expected-result:
+    Должна быть кнопка очисть корзину
+  actual-result:
+    Кнопки отчистить ВСЮ корзину нет, можно только по отдельности удалить каждый товар
+
+- summary:
+    Не происходит переход в категорию товаров используя хештег на странице товара
+  environment: 
+    Mozilla/5.0 Windows NT 10.0; Win64; x64
+  steps-to-reproduce:
+    1. Зайти на сайт магазина https://hexlet-products-store.vercel.app/
+    2. Выбрать любой товар и перейти на страницу этого товара
+    3. Нажать на хештег товара
+  expected-result:
+    Ожидается переход на страницу с категорией товара этого хештега
+  actual-result:
+    Ничего не происходит
+
+- summary:
+    Не происходит переход на страницу оплаты
+  environment: 
+    Mozilla/5.0 Windows NT 10.0; Win64; x64
+  steps-to-reproduce:
+    1. Зайти на сайт магазина https://hexlet-products-store.vercel.app/
+    2. Выбрать любой товар и добавить его в корзину
+    3. Нажать на оформить заказ
+  expected-result:
+    Ожидается переход на страницу оплаты товара
+  actual-result:
+    Появляется информация об успешном оформлении заказа, переход на страницу оплаты отсутствует
+
+- summary:
+    Запросы и ответы с сервера приходят с ошибками
+  environment: 
+    Mozilla/5.0 Windows NT 10.0; Win64; x64
+  steps-to-reproduce:
+    1. Зайти на сайт магазина https://hexlet-products-store.vercel.app/
+    2. Открыть devoops
+    3. Открыть вкладку сеть
+  expected-result:
+    Ожидается, что все запросы и ответы приходят без ошибок
+  actual-result:
+    Появляется информация об наличии ошибок
