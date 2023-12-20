@@ -13,7 +13,7 @@
   status: pass
 - summary:
     Успешная фильтрация товаров по цене от 1 до 9999
-status: pass
+  status: pass
 - summary:
     Успешная фильтрация товаров при установленной отрицательной цене 
   status: pass
