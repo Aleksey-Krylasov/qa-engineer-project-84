@@ -79,6 +79,14 @@ test-cases:
 - summary: 
     Успешная проверка сайта, что запросы и ответы с сервера приходят без ошибок 
   status: pass
+  
+- summary: 
+    Успешная проверка сайта, что фильтрация товара происходит с учетом скидки 
+  status: pass
+
+  - summary: 
+    Успешная проверка сайта, что при добавлении нескольких товаров информация о количестве идет в столбик 
+  status: pass
     
 bugreports:
 - summary:
@@ -104,3 +112,15 @@ bugreports:
     Должно высветиться сообщение об ошибке
   actual-result: 
     Ничего не происходит
+
+- summary:
+    Не фильтруются товары при указании цены в поле "До"
+  environment:
+    Mozilla/5.0 Windows NT 10.0; Win64; x64
+  steps-to-reproduce:
+    1. Октрыть сайт магазина https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    2. В форме цены  в поле "до" указать 1 
+  expected-result: 
+    Сайт должен показывать товары до 1
+  actual-result: 
+    Сайт показывает товары дороже 1
